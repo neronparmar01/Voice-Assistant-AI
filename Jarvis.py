@@ -71,11 +71,11 @@ def process_command(command):
     
     # time commands
     elif "Time" in command or "Time?" in command or "What's the current Time?" in command or "What's the time?" in command:
-        current_time = datetime.datetime.now().strftime("%H:%M")
+        current_time = datetime.datetime.now().strftime("%I:%M %p")
         speak("The current time is " + current_time)
     # ------------------for lower case (time)----------------------    
     elif "what's the current time?" in command or "time" in command or "What's the time?" in command or "time?" in command:
-        current_time = datetime.datetime.now().strftime("%H:%M")
+        current_time = datetime.datetime.now().strftime("%I:%M %p")
         speak("The current time is " + current_time)
     
     # date commands
